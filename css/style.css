@@ -1,0 +1,273 @@
+/* General styles */
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+span {
+    font-weight: 400;
+    color:  #1ac056;
+    text-shadow: 2px 2px 2px rgba(0,0,0,.1);
+}
+h3 {
+    font-weight: 300;
+    color: #291f1a;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgba(0,0,0,.1);
+    font-size: 2em;
+}
+p {
+    font-weight: 300;
+    line-height: 1.5;
+}
+.col-1-2 {
+    width: 50%;
+    float: left;
+}
+section, footer {
+    padding: 80px 100px;
+}
+/* General styles END */
+
+/* Main nav styles */
+#menu {
+    background-color: rgba(9, 155, 54, 0.4);
+    box-shadow: 2px 2px 2px rgba(0,0,0,.1);
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+#menu ul {
+    text-align: right;
+}
+#menu .menu-item{
+    display: inline-block;
+    padding: 10px;
+}
+#menu .menu-item a:hover {
+    color: #fcc224;
+    text-shadow:2px 2px 2px rgba(0,0,0,.5);
+    transition: all 0.2s;
+}
+#menu .menu-item a {
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 2px 2px 2px rgba(0,0,0,.1);
+    
+}
+/* Main nav styles END */
+
+/* Main header styles */
+#main-header {
+    height: 100vh;
+    background-image: url(../img/header-background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: #fff;
+}
+#main-header .header-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+#main-header .header-caption h1,
+#main-header .header-caption h2 {
+    font-weight: 100;
+    text-shadow:2px 2px 2px rgba(0,0,0,.1);
+}
+#main-header .header-caption h1 {
+    font-size: 5em;
+}
+#main-header .header-caption h2 {
+    font-size: 2em;
+}
+/* Maind header styles END */
+
+/* About section styles */
+#about {
+    background-color:  #f9fcfe;
+    box-shadow: 5px 5px 5px rgba(0,0,0,.2);
+    overflow: hidden;
+}
+#about figure img {
+    max-height: 350px;
+    max-width: 100%;
+    border: 10px solid #fff;
+    border-radius: 10px;
+}
+#about figure {
+    margin: 0;
+    text-align: center;
+}
+/* About section styles END */
+#skills {
+    text-align: center;
+}
+#skills .skills-item {
+    display: inline-block;
+}
+#skills .skills-item figcaption {
+    margin-top: 15px;
+    font-weight: 300;
+}
+/* Skills section styles */
+
+/* Portfolio section styles */
+#portfolio {
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+.portfolio-item, .portfolio-item-mask {
+    height: 350px;
+    margin: 0;
+    float: left;
+    position: relative;
+}
+#portfolio .portfolio-item-border {
+    position: absolute;
+    border: 1px solid #fff;
+    height: 95%;
+    width: 95%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+#portfolio .portfolio-item-content {
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+#portfolio .portfolio-item-content i {
+    font-size: 2em;
+}
+#porftolio, 
+.portfolio-item {
+    width: 33.33333%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.portfolio-item-mask {
+    width: 100%;
+    transition: all 0.2s ease-out;
+    opacity: 0;
+}
+.portfolio-item-link {
+    text-decoration: none;
+    font-weight: 300;
+}
+#portfolio-item-1 {
+    background-image: url(../img/portfolio1.jpg);
+}
+#portfolio-item-2 {
+    background-image: url(../img/portfolio2.jpg);
+}
+#portfolio-item-3 {
+    background-image: url(../img/portfolio3.jpg);
+}
+.portfolio-item-mask:hover {
+    background-color: rgba(33, 59, 80, 0.65);
+    color: #fff;
+    opacity: 1;
+}
+/* Portfolio section styles END */
+
+/* Main footer styles */
+#contact {
+    background-color: #213b50;
+    overflow: hidden;
+}
+#contact address {
+    font-weight: 300;
+    font-style: normal;
+    color: #fff;
+}
+#contact h3 {
+    text-align: left;
+    color: #fff;
+}
+#contact .social-icons {
+    margin-top: 40px;
+}
+#contact .social-icon {
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 2em;
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+    margin-right: 10px;
+    transition: all 0.2s ease-out;
+}
+#contact .social-icon:hover {
+    color: #213b50;
+    background-color: #fff;
+}
+.contact-content a {
+    color: #1ac056;
+}
+#contact input:not([type="submit"]),
+#contact textarea {
+    display: block;
+    width: 100%;
+    background-color: #274860;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: none;
+}
+#contact input[type="submit"] {
+    background-color: #1ac056;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 20px;
+    float: right;
+    transition: all 0.2s ease-out;
+}
+#contact input[type="submit"]:hover {
+    cursor: pointer;
+    color: #1ac056;
+    background-color: #fff;
+}
+#contact input:focus, 
+#contact textarea:focus {
+    background-color: #4e708c;
+    color: #ffffff;
+    border: solid #ffffff 1px;
+}
+#contact input::placeholder,
+#contact textarea::placeholder {
+    color: rgb(176, 194, 235);
+}
+/* Main footer styles END */
+
+/* Below footer styles */
+.copyright {
+    height: 25px;
+    margin-top: -20px;
+    width: 100%;
+    background-color: #132431;
+    color: #fff;
+}
+.copyright-content {
+    margin-left: 100px;
+}
+.copyright-content i {
+    font-size: 0.9em;
+}
+/* Below footer styles END */
