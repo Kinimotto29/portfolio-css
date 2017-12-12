@@ -1,187 +1,233 @@
-<!DOCTYPE html>
-<html lang="pl">
+<!doctype html>
+<html lang="en">
+
 <head>
-   
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <title>Moje portfolio</title>
-    
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
     <!-- Google fonts styles -->
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700&amp;subset=latin-ext" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700&amp;subset=latin-ext" rel="stylesheet">
-    
+
     <!-- Font Awesome styles -->
     <link rel="stylesheet" href="css/font-awesome.min.css">
-    
+
     <!-- Main style sheet -->
     <link rel="stylesheet" href="css/style.css">
-    
-   <!-- Responsive styles -->
-   <link rel="stylesheet" href="css/responsive.css">
-    
+
 </head>
+
 <body>
 
-<!-- Main nav -->
-<nav id="menu">
-    <ul>
-        <li class="menu-item"><a href="#about">o mnie</a></li>
-        <li class="menu-item"><a href="#skills">umiejętności</a></li>
-        <li class="menu-item"><a href="#portfolio">portfolio</a></li>
-        <li class="menu-item"><a href="#contact">kontakt</a></li>
-    </ul>
-</nav>
-<!-- Main nav END -->
+    <!-- Main nav -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand blur" href="#">Moje porfolio</a>
+            <button class="navbar-toggler blur" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav w-100 justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link blur" href="#about">o mnie <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link blur" href="#skills">umiejętności</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link blur" href="#portfolio">portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link blur" href="#contact">kontakt</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Main nav END -->
 
-<!-- Main header -->
-<header id="main-header">
-    <div class="header-caption">
-      <h1>Jan <span>Nowak</span></h1>
-      <h2>Front-End Developer</h2>
-    </div>
-</header>
-<!-- Main header END -->
+    <!-- Main header -->
+    <header id="main-header" class="container-fluid text-center">
+        <div class="header-caption container">
+            <h1>Jan <span class="span-green">Nowak</span></h1>
+            <h2>Front-End Developer</h2>
+        </div>
+    </header>
+    <!-- Main header END -->
 
-<!-- About section -->
-<section id="about">
-   <h3>O <span>mnie</span></h3>
-      <figure class="col-1-2">
-          <img src="img/jan-nowak.jpg" alt="Jan Nowak">
-      </figure>
-      <div class="col-1-2">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae numquam quidem, recusandae nulla dolorem facilis necessitatibus inventore, quas incidunt tempora consequatur deserunt officia quo quaerat voluptatum amet reiciendis alias distinctio.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, numquam accusantium. In animi numquam adipisci tempora similique aspernatur dolor sed, facere vitae debitis et nihil deserunt reprehenderit totam, facilis corporis.</p>
-      </div>
-</section>
-<!-- About section END -->
+    <!-- About section -->
+    <section id="about" class="container-fluid">
+        <div class="container text-center">
+            <header class="section-header">
+                <h3>O <span class="span-green">mnie</span></h3>
+            </header>
+            <div class="row">
+                <div class="col-md">
+                    <img src="img/jan-nowak.jpg" alt="Jan Nowak" class="img-thumbnail">
+                </div>
+                <div class="col-md">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae numquam quidem, recusandae nulla dolorem facilis necessitatibus inventore, quas incidunt tempora consequatur deserunt officia quo quaerat voluptatum amet reiciendis alias distinctio.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, numquam accusantium. In animi numquam adipisci tempora similique aspernatur dolor sed, facere vitae debitis et nihil deserunt reprehenderit totam, facilis corporis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About section END -->
 
-<!-- Skills section -->
-<section id="skills">
-    <h3>Moje <span>umiejętności</span></h3>
-     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit repudiandae modi voluptatem sapiente excepturi porro, aperiam sed ipsa hic aliquam dicta ullam, culpa dolor velit, provident dolorem aliquid ab nihil autem iusto. Excepturi illo minima blanditiis, repellendus, aperiam assumenda laudantium.</p>
-     <figure class="skills-item">
-         <img src="icons/html5.png" alt="HTML5">
-         <figcaption>HTML5</figcaption>
-     </figure>
-     <figure class="skills-item">
-         <img src="icons/css3.png" alt="CSS3">
-         <figcaption>CSS3</figcaption>
-     </figure>
-     <figure class="skills-item">
-         <img src="icons/js.png" alt="JavaScript">
-         <figcaption>JavaScript</figcaption>
-     </figure>
-     <figure class="skills-item">
-         <img src="icons/jquery.png" alt="JQuery">
-         <figcaption>JQuery</figcaption>
-     </figure>
-</section>
-<!-- Skills section END -->
+    <!-- Skills section -->
+    <section id="skills" class="container-fluid">
+        <div class="container text-center">
+            <div class="section-header">
+                <h3>Moje <span class="span-green">umiejętności</span></h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit repudiandae modi voluptatem sapiente excepturi porro, aperiam sed ipsa hic aliquam dicta ullam, culpa dolor velit, provident dolorem aliquid ab nihil autem iusto. Excepturi illo minima blanditiis, repellendus, aperiam assumenda laudantium.</p>
+            </div>
+            <div class="row align-items-center">
+                <figure class="col col-sm-3">
+                    <img src="icons/html5.png" alt="HTML5">
+                    <figcaption>HTML5</figcaption>
+                </figure>
+                <figure class="col col-sm-3">
+                    <img src="icons/css3.png" alt="CSS3">
+                    <figcaption>CSS3</figcaption>
+                </figure>
+                <figure class="col col-sm-3">
+                    <img src="icons/js.png" alt="JavaScript">
+                    <figcaption>JavaScript</figcaption>
+                </figure>
+                <figure class="col col-sm-3">
+                    <img src="icons/jquery.png" alt="JQuery">
+                    <figcaption>JQuery</figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+    <!-- Skills section END -->
 
-<!-- Portfolio section -->
-<section id="portfolio">
-   
-    <h3>Moje <span>portfolio</span></h3>
-      
-       <figure class="portfolio-item" id="portfolio-item-1">
-         <a class="portfolio-item-link" href="https://www.google.pl/">
-          <div class="portfolio-item-mask">
-           <div class="portfolio-item-border">
-            <div class="portfolio-item-content">
-             <h4>Opis projektu</h4>
-             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, culpa.</p>
-             <h5>Technologie:</h5>
-             <p>HTML5, CSS3, JavaScript, JQuery</p>
-             <i class="fa fa-link" aria-hidden="true"></i>
-           </div>
-          </div>
-         </div>
-        </a>
-       </figure>
-       
-       <figure class="portfolio-item" id="portfolio-item-2">
-        <a class="portfolio-item-link" href="https://www.google.pl/">
-          <div class="portfolio-item-mask">
-           <div class="portfolio-item-border">
-            <div class="portfolio-item-content">
-             <h4>Opis projektu</h4>
-             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, culpa.</p>
-             <h5>Technologie:</h5>
-             <p>HTML5, CSS3, JavaScript, JQuery</p>
-             <i class="fa fa-link" aria-hidden="true"></i>
-           </div>
-          </div>
-         </div>
-        </a>
-       </figure>
-       
-       <figure class="portfolio-item" id="portfolio-item-3">
-         <a class="portfolio-item-link" href="https://www.google.pl/">
-          <div class="portfolio-item-mask">
-           <div class="portfolio-item-border">
-            <div class="portfolio-item-content">
-             <h4>Opis projektu</h4>
-             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed repudiandae praesentium quasi exercitationem, natus nulla expedita in ullam, saepe quia.</p>
-             <h5>Technologie:</h5>
-             <p>HTML5, CSS3, JavaScript, JQuery</p>
-             <i class="fa fa-link" aria-hidden="true"></i>
-           </div>
-          </div>
-         </div>
-        </a>
-       </figure>
-       
-</section>
-<!-- Portfolio section END -->
+    <!-- Portfolio section -->
+    <section id="portfolio" class="container-fluid">
+        <div class="container text-center">
+            <div class="section-header">
+                <h3>Moje <span class="span-green">portfolio</span></h3>
+            </div>
+            <div class="row align-items-center">
+                <div class="portfolio-item col-sm-12 col-md-6 col-lg-4" id="portfolio-item-1">
+                    <a class="portfolio-item-link" href="https://www.google.pl/">
+                        <div class="portfolio-item-mask">
+                            <div class="portfolio-item-border">
+                                <div class="portfolio-item-content">
+                                    <h4>Opis projektu</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, culpa.</p>
+                                    <h5>Technologie:</h5>
+                                    <p>HTML5, CSS3, JavaScript, JQuery</p>
+                                    <i class="fa fa-link" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
 
-<!-- Main footer - contact -->
-<footer id="contact">
-   
-<h3>Jan <span>Nowak</span></h3>
-  
-<div class="col-1-2">
-   <address class="contact-content"> 
+                <div class="portfolio-item col-sm-12 col-md-6 col-lg-4" id="portfolio-item-2">
+                    <a class="portfolio-item-link" href="https://www.google.pl/">
+                        <div class="portfolio-item-mask">
+                            <div class="portfolio-item-border">
+                                <div class="portfolio-item-content">
+                                    <h4>Opis projektu</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, culpa.</p>
+                                    <h5>Technologie:</h5>
+                                    <p>HTML5, CSS3, JavaScript, JQuery</p>
+                                    <i class="fa fa-link" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="portfolio-item col-sm-12 col-md-12 col-lg-4" id="portfolio-item-3">
+                    <a class="portfolio-item-link" href="https://www.google.pl/">
+                        <div class="portfolio-item-mask">
+                            <div class="portfolio-item-border">
+                                <div class="portfolio-item-content">
+                                    <h4>Opis projektu</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed repudiandae praesentium quasi exercitationem, natus nulla expedita in ullam, saepe quia.</p>
+                                    <h5>Technologie:</h5>
+                                    <p>HTML5, CSS3, JavaScript, JQuery</p>
+                                    <i class="fa fa-link" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Portfolio section END -->
+
+    <!-- Main footer - contact -->
+    <footer id="contact" class="container-fluid">
+        <div class="container">
+            <h3>Jan <span class="span-green">Nowak</span></h3>
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <address class="contact-content"> 
      ul. Mostowa 6/13<br>
      31-061 Kraków<br><br>
      tel: 606 74 57<br>
      e-mail: <a href="mailto:example@example.pl">example@example.pl</a>
    </address>
-  <div class="social-icons">
-    <a class="social-icon" href="https://www.facebook.com/">
+                    <div class="social-icons text-center">
+                        <a class="social-icon" href="https://www.facebook.com/">
       <i class="fa fa-facebook" aria-hidden="true"></i>
     </a>
-    
-    <a class="social-icon" href="https://plus.google.com/">
+
+                        <a class="social-icon" href="https://plus.google.com/">
       <i class="fa fa-google-plus" aria-hidden="true"></i>
     </a>
-    
-    <a class="social-icon" href="https://twitter.com/">
+
+                        <a class="social-icon" href="https://twitter.com/">
       <i class="fa fa-twitter" aria-hidden="true"></i>
     </a>
-        
-    <a class="social-icon" href="https://www.linkedin.com/">
+
+
+                        <a class="social-icon" href="https://www.linkedin.com/">
       <i class="fa fa-linkedin" aria-hidden="true"></i>
     </a>
-  </div>
-</div>
-  
-  <form class="col-1-2" action="https://formspree.io/domind1823@gmail.com" method="POST">
-        <input name="Imię i nazwisko" type="text" placeholder="Imię i nazwisko">
-        <input name="E-mail" type="email" placeholder="E-mail">
-        <textarea name="Wiadomość" placeholder="Treść wiadomości"></textarea>
-        <input type="submit" value="wyślij">
-  </form>
-    
-</footer>
-<!-- Main footer - contact END -->
+                    </div>
+                </div>
 
-<!-- Below footer -->
-<div class="copyright">
-   <p class="copyright-content">Copyright <i class="fa fa-copyright" aria-hidden="true"></i> Jan Nowak
-   </p>
-</div>
-<!-- Below footer - END -->
+                <form class="col-lg-6 col-md-12 col-sm-12" action="https://formspree.io/domind1823@gmail.com" method="POST">
+                    <input name="Imię i nazwisko" type="text" placeholder="Imię i nazwisko">
+                    <input name="E-mail" type="email" placeholder="E-mail">
+                    <textarea name="Wiadomość" placeholder="Treść wiadomości"></textarea>
+                    <input type="submit" value="wyślij">
+                </form>
+
+            </div>
+
+        </div>
+
+    </footer>
+    <!-- Main footer - contact END -->
+
+    <!-- Below footer -->
+    <div class="copyright container-fluid">
+        <div class="container">Copyright &copy; Jan Nowak
+        </div>
+    </div>
+    <!-- Below footer - END -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 
 </body>
+
 </html>
